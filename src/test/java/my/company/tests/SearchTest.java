@@ -52,7 +52,7 @@ public class SearchTest {
         steps = new WebDriverSteps(webDriver);
     }
 
-    @Test
+    //@Test
     @Issue("ISSUE-1")
     public void searchTest() throws Exception {
         steps.openMainPage();
