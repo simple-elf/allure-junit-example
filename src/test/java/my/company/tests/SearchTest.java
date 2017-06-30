@@ -47,7 +47,7 @@ public class SearchTest {
         capability.setCapability("screenResolution", "1920x1080x24");
         capability.setCapability("enableVNC", true);
 
-        webDriver = new RemoteWebDriver(new URL("http://46.101.241.43:4444/wd/hub"), capability);
+        webDriver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), capability);
         System.out.println("RemoteWebDriver started!!! ");
 
         steps = new WebDriverSteps(webDriver);
