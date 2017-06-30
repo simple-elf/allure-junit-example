@@ -22,7 +22,7 @@
     <properties>
         <allure.version>1.4.23.HOTFIX1</allure.version>
         <aspectj.version>1.8.9</aspectj.version>
-        <compiler.version>1.7</compiler.version>
+        <compiler.version>1.8</compiler.version>
     </properties>
 
     <name>Allure JUnit Example</name>
