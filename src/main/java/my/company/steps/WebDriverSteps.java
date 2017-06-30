@@ -28,7 +28,7 @@ public class WebDriverSteps {
     }
 
     @Step
-    public void openMainPage() {
+    public void openMainPage() throws Exception {
         driver.get("http://ya.ru");
     }
 

@@ -50,7 +50,7 @@ public class SearchTest {
         capability.setCapability(ChromeOptions.CAPABILITY, getChromeOptions());
         //capability.setCapability("version", "58.0");
         capability.setCapability("screenResolution", "1920x1080x24");
-        //capability.setCapability("enableVNC", true);
+        capability.setCapability("enableVNC", true);
 
         webDriver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), capability);
         System.out.println("RemoteWebDriver started!!! ");
