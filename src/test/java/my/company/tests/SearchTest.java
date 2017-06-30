@@ -39,26 +39,9 @@ public class SearchTest {
         return options;
     }
 
-    @Rule
-    public BrowserWebDriverContainer chrome =
-            new BrowserWebDriverContainer()
-                    .withDesiredCapabilities(DesiredCapabilities.chrome());
 
     @Before
-    public void setUp() {
-        RemoteWebDriver driver = chrome.getWebDriver();
-        steps = new WebDriverSteps(driver);
-        //WebDriverRunner.setWebDriver(driver);
-    }
-
-    @After
-    public void tearDown() {
-        //WebDriverRunner.closeWebDriver();
-    }
-
-
-    //@Before
-    public void setUp1() throws Exception {
+    public void setUp() throws Exception {
         //ChromeDriverManager.getInstance().setup();
 
         WebDriver webDriver;
