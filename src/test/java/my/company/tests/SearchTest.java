@@ -44,7 +44,7 @@ public class SearchTest {
         DesiredCapabilities capability = DesiredCapabilities.chrome();
         capability.setCapability(ChromeOptions.CAPABILITY, getChromeOptions());
         capability.setCapability("screenResolution", "1920x1080x24");
-        capability.setCapability("enableVNC", true);
+        //capability.setCapability("enableVNC", true);
 
         webDriver = new RemoteWebDriver(new URL("http://46.101.241.43:4444/wd/hub"), capability);
         System.out.println("RemoteWebDriver started!!! ");
@@ -52,7 +52,7 @@ public class SearchTest {
         steps = new WebDriverSteps(webDriver);
     }
 
-    //@Test
+    @Test
     @Issue("ISSUE-1")
     public void searchTest() throws Exception {
         steps.openMainPage();
