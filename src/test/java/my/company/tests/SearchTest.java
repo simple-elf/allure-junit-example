@@ -51,11 +51,17 @@ public class SearchTest {
         //capability.setCapability("version", "58.0");
         capability.setCapability("screenResolution", "1920x1080x24");
         capability.setCapability("enableVNC", true);
+        try {
+            webDriver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), capability);
+            System.out.println("RemoteWebDriver started!!! ");
+            webDriver.get("ya.ru");
 
-        webDriver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), capability);
-        System.out.println("RemoteWebDriver started!!! ");
+            steps = new WebDriverSteps(webDriver);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw e;
+        }
 
-        steps = new WebDriverSteps(webDriver);
     }
 
     @Test
